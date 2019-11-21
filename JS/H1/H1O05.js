@@ -23,7 +23,7 @@ function draw() {
   noStroke();
   rect(120,330,30,50);
   // einde teken het huis
-  //translate(-90,10);
+  translate(-90,10);
   
   // teken de maan
   fill('khaki');
