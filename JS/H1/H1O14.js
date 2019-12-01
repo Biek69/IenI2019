@@ -13,11 +13,12 @@ function setup() {
 function draw() {
   background('lavender');
   fill('black');
-  yJOS--;
+  yJOS-=snelheidJOS;
+  snelheidJOS -= 0.5;
 
   xJOS=constrain(xJOS,75,width-75);
   yJOS=constrain(yJOS,75,height-75);
-  text("x = " + round(xJOS) + " y = " + yJOS,10,20);
+  text("x = " + round(xJOS) + " y = " + yJOS + " snelheid = " + snelheidJOS,10,20);
   
   translate(xJOS,yJOS);
 
