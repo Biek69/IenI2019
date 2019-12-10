@@ -1,22 +1,19 @@
- var zwart= 100;
- var diameter= 2;
-
- function setup() {
+function setup() {
   canvas = createCanvas(450,450);
+  background('silver');
   canvas.parent('processing');
   //noLoop();
 }
+ var x= 0;
 
 function draw() {
-  background('silver');
-  noStroke();
-  fill('deepskyblue');
-  ellipse(450,450,diameter);
-  fill('grey');
-  ellipse(0,0,diameter);
-  fill('black');
-  ellipse(100,zwart,100);
-  zwart= constrain(zwart,0,400)
-  diameter++;
-  zwart++;
+ noStroke();
+ if(x<=200){
+   fill('white');
+  }
+else{
+    fill('yellow');
+}
+  ellipse(225,225,x);
+  x= x+1;
 }
