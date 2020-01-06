@@ -1,19 +1,14 @@
 function setup() {
   canvas = createCanvas(450,450);
-  background('silver');
+  background('choco');
   canvas.parent('processing');
   //noLoop();
 }
- var x= 0;
-
-function draw() {
- noStroke();
- if(x<=200){
-   fill('white');
-  }
-else{
-    fill('yellow');
+function preload() {
+choco = loadimage("images/choco.jpg");
+toren = loadimage("images/toren.jpg");
 }
-  ellipse(225,225,x);
-  x= x+1;
+function draw () {
+    background(choco);
+
 }
